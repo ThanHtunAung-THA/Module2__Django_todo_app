@@ -19,7 +19,7 @@ def todo_create(request):
         else:
             return render(request, 'todo_form.html', {'error': 'title cannot be empty.'})
         
-    return render(request, 'todo_list.html')
+    return render(request, 'todo_create.html')
 
 
 def todo_delete(request, id):
